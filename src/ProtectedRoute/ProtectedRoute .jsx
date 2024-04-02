@@ -4,7 +4,7 @@ const ProtectedRoute = ({ children }) => {
   const location = useLocation();
   const secureToken = localStorage.getItem("token");
 
-  if (location.pathname === "/kyc") {
+  if (location.pathname === "/welcome") {
     if (secureToken) {
       return children;
     } else {
@@ -13,7 +13,7 @@ const ProtectedRoute = ({ children }) => {
   }
   if (location.pathname === "/") {
     if (secureToken) {
-      return <Navigate to="/kyc" />;
+      return <Navigate to="/welcom" />;
     } else {
         return children;
     }
