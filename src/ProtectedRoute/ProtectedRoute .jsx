@@ -13,7 +13,7 @@ const ProtectedRoute = ({ children }) => {
   }
   if (location.pathname === "/") {
     if (secureToken) {
-      return <Navigate to="/welcom" />;
+      return <Navigate to="/welcome" />;
     } else {
         return children;
     }

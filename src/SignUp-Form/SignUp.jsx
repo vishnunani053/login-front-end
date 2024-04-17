@@ -89,7 +89,7 @@ const SignUpForm = () => {
             <p>{message}</p>
           </div>
           <div className="d-flex justify-content-end">
-            <Link href="/login">Sign in</Link>
+            <Link to="/login">Sign in</Link>
           </div>
           <div>
             <Button

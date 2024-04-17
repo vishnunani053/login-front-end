@@ -65,7 +65,7 @@ const LoginForm = () => {
           </Col>
         </Row>        
         <div className="d-flex justify-content-end">
-            <Link href="/">Sign up</Link>
+            <Link to="/">Sign up</Link>
         </div>
         <div>
             <Button>Login</Button>
