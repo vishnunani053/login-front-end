@@ -3,7 +3,7 @@ import SignupForm from "./signup/SignupForm";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./signup/Login";
 import Home from "./signup/Home";
-import ProtectedRoute from "./signup/ProtectedRoute";
+import ProtectedRoute from "./ProtectedRoute/ProtectedRoute ";
 
 const App = () => {
   return (
