@@ -29,7 +29,8 @@ const LoginForm = () => {
          const body=await response.json()
          console.log("body",body)
          if (body.success) {
-          localStorage.setItem("token",body.data.token) 
+          // localStorage.setItem("token",body.data.token) 
+          localStorage.setItem(body.data.token)
           navigate("/welcome")
           
          }
