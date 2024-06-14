@@ -4,19 +4,29 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./signup/Login";
 import Home from "./signup/Home";
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute ";
+import Dashboard from "./dashboard/Dashboard";
+import TodoList from "./dashboard/TodoList";
 
 const App = () => {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<SignupForm />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignupForm />} />
+          <Route path="/" element={<Login />} />
           <Route
-            path="/home"
-            element={ 
+            path="/dashboard"
+            element={
               <ProtectedRoute>
-                <Home />
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/todolist"
+            element={
+              <ProtectedRoute>
+                <TodoList />
               </ProtectedRoute>
             }
           />
